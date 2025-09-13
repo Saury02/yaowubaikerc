@@ -1,0 +1,331 @@
+/* 自定义白紫色主题 */
+:root {
+  /* 基础颜色 */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafaff;
+  --vp-c-text-1: #27272a;
+  --vp-c-text-2: #52525b;
+  --vp-c-text-3: #71717a;
+  
+  /* 紫色主题色 */
+  --vp-c-primary: #9333ea;
+  --vp-c-primary-light: #a855f7;
+  --vp-c-primary-lighter: #c084fc;
+  --vp-c-primary-dark: #7e22ce;
+  --vp-c-primary-darker: #6b21a8;
+  --vp-c-primary-soft: #f3e8ff;
+  
+  /* 分隔线和边框 */
+  --vp-c-divider: #e4e4e7;
+  --vp-c-border: #e4e4e7;
+}
+
+/* 暗色模式下的紫色主题 */
+.dark {
+  --vp-c-bg: #18181b;
+  --vp-c-bg-alt: #27272a;
+  --vp-c-text-1: #f4f4f5;
+  --vp-c-text-2: #d4d4d8;
+  --vp-c-text-3: #a1a1aa;
+  
+  /* 暗色模式下的紫色 */
+  --vp-c-primary: #a855f7;
+  --vp-c-primary-light: #c084fc;
+  --vp-c-primary-lighter: #d8b4fe;
+  --vp-c-primary-dark: #9333ea;
+  --vp-c-primary-darker: #7e22ce;
+  --vp-c-primary-soft: #3f3f46;
+  
+  --vp-c-divider: #3f3f46;
+  --vp-c-border: #3f3f46;
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg);
+}
+
+.VPSidebarGroup {
+  margin-bottom: 1rem;
+}
+
+.VPSidebarGroup .title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+}
+
+.VPSidebarItem {
+  margin: 0.125rem 0;
+}
+
+.VPSidebarItem a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+}
+
+.VPSidebarItem a:hover {
+  background-color: var(--vp-c-primary-soft);
+  color: var(--vp-c-primary);
+}
+
+.VPSidebarItem.active a {
+  background-color: var(--vp-c-primary-soft);
+  color: var(--vp-c-primary);
+  font-weight: 500;
+}
+
+/* 药物信息卡片样式 */
+.drug-card {
+  background-color: var(--vp-c-bg-alt);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drug-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.1);
+}
+
+.drug-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.drug-card h3 {
+  color: var(--vp-c-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.drug-card .price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin: 1rem 0;
+}
+
+.drug-card .description {
+  color: var(--vp-c-text-2);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* 药物详情页面样式 */
+.drug-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.drug-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.drug-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.drug-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.drug-details p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.drug-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--vp-c-primary);
+  margin: 1.5rem 0;
+}
+
+/* 分类卡片样式 */
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.category-card {
+  background-color: var(--vp-c-bg-alt);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(147, 51, 234, 0.1);
+}
+
+.category-card h3 {
+  color: var(--vp-c-primary);
+  margin-bottom: 1rem;
+}
+
+.category-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--vp-c-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.category-link:hover {
+  color: var(--vp-c-primary-dark);
+}
+
+/* 药物列表样式 */
+.drug-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--vp-c-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--vp-c-primary-dark);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--vp-c-primary);
+  border: 1px solid var(--vp-c-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--vp-c-primary-soft);
+}
+
+/* 药物详情页面的标签样式 */
+.drug-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  background-color: var(--vp-c-primary-soft);
+  color: var(--vp-c-primary);
+  padding: 0.25rem 0.75rem; 
+  border-radius: 16px;
+  font-size: 0.875rem;
+}
+
+/* 药物说明部分样式 */
+.drug-instructions {
+  background-color: var(--vp-c-bg-alt);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.drug-instructions h3 {
+  color: var(--vp-c-primary);
+  margin-bottom: 1rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .drug-info {
+    flex-direction: column;
+  }
+  
+  .drug-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 导航栏手机端适配 */
+  .VPNavBar {
+    padding: 0 12px;
+  }
+  
+  .VPNavBarTitle {
+    font-size: 1rem;
+  }
+  
+  /* 侧边栏在小屏幕上的优化 */
+  .VPSidebar {
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .VPSidebar.is-open {
+    transform: translateX(0);
+  }
+  
+  /* 优化按钮在手机上的显示 */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* 优化卡片间距 */
+  .drug-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  /* 优化字体大小 */
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
