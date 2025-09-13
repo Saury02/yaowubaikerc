@@ -1,0 +1,22 @@
+{
+  "cleanUrls": true,
+  "framework": "vitepress",
+  "outputDirectory": "example/dist", // 与 config.ts 的 outDir 一致
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/feed.xml", "destination": "/feed.xml" },
+    { "source": "/:path*", "destination": "/index.html" }
+  ],
+  "installCommand": "pnpm install --frozen-lockfile", 
+  "buildCommand": "pnpm run build", 
+  "engines": {
+    "node": ">=20.x",
+    "pnpm": ">=10.4.1" 
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "VITE_UNOCSS_INCLUDE": "example/docs/**/*" 
+    }
+  }
+}
