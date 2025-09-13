@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "RC商店"
+  name: "RC商店1"
   text: "优质产品一站式购物体验"
 
   actions:
