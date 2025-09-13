@@ -40,7 +40,7 @@ const sidebarOptions = [
 const themeConfig: ThemeContext = {
   siteTitle: 'RC商店',
   siteDescription: 'RC商店 提供各类优质产品。',
-  githubRepoLink: 'https://github.com/kazukokawagawa/drug_artist',
+  githubRepoLink: 'https://github.com/Saury02/yaowubaikerc',
   siteLogo: '/public/logo.png',
   rootDir: 'docs',
   include: ['store'], // 只包含商店目录
