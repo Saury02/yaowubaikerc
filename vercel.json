@@ -3,28 +3,8 @@
   "framework": "vitepress",
   "outputDirectory": "example/dist",
   "rewrites": [
-    {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/feed.xml",
-      "destination": "/feed.xml"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/index.html"
-    }
-  ],
-  "installCommand": "pnpm install",
-  "buildCommand": "cd example && pnpm run build",
-  "engines": {
-    "node": ">=20.x",
-    "pnpm": ">=10.4.1"
-  },
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  }
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/feed.xml", "destination": "/feed.xml" },
+    { "source": "/:path*", "destination": "/index.html" }
+  ]
 }
