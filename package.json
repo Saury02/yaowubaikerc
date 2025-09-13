@@ -70,6 +70,7 @@
     "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^22.16.4",
     "@unocss/eslint-plugin": "^66.3.3",
+    "@vitejs/plugin-vue": "^6.0.1",
     "eslint": "^9.31.0",
     "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.3",

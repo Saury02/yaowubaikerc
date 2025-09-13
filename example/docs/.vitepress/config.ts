@@ -20,7 +20,7 @@ const nav: DefaultTheme.NavItem[] = [
   }
 ]
 
-// 侧边栏基础配置
+// 默认侧边栏配置
 const baseConfig = {
   useTitleFromFrontmatter: true,
   useFolderTitleFromIndexFile: true,
@@ -39,7 +39,6 @@ const sidebarOptions = [
   }
 ]
 
-// 主题全局配置
 const themeConfig: ThemeContext = {
   siteTitle: 'RC商店',
   siteDescription: 'RC商店 提供各类优质产品。',
@@ -49,14 +48,21 @@ const themeConfig: ThemeContext = {
   include: ['store'], // 仅包含 store 目录的内容
   nav,
   sidebarOptions,
-  enableSuggestionBox: false,
-  HideReadingTime: true,
-  HideLastUpdated: true,
+  enableSuggestionBox: false, // 
+  HideReadingTime: true, 
+  HideLastUpdated: true, 
   HideAuthors: true,
-  enableDisclaimer: false,
+  // fontsBaseUrl: 'http://localhost:8788', // For local development with wrangler pages dev
+  disclaimerPaths: [
+    {
+      path: '/zh-cn/',
+      summaryHtml: 'Drug_artist 中的内容，仅供参考。可能存在过时或不准确的信息，请谨慎甄别。',
+    },
+  ],
+  enableDisclaimer: true,
   disclaimerStatusKey: 'disclaimerStatus',
 
-  // 国际化配置（仅中文）
+  // i18n
   locales: {
     root: {
       label: '中文',
@@ -66,24 +72,14 @@ const themeConfig: ThemeContext = {
   },
 }
 
-// VitePress 核心配置（整合主题与基础配置）
+// https://vitepress.dev/reference/site-config
 export default withThemeContext(themeConfig, () => {
   return {
     ...genConfig(),
-    outDir: '../dist', // 构建输出目录（相对于 docs 文件夹）
+    outDir: '../dist',
     sitemap: {
-      lastmodDateOnly: true, // 修复原语法错误：添加逗号
+
+    lastmodDateOnly: true
     },
-    // 额外确保 Vite 能解析主题的 .vue 文件（兜底配置）
-    vite: {
-      resolve: {
-        extensions: ['.vue', '.js', '.ts', '.json'],
-      },
-      server: {
-        fs: {
-          allow: ['../node_modules'], // 允许读取根目录的 node_modules（主题所在位置）
-        }
-      }
-    }
   }
 })
