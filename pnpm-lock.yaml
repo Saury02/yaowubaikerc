@@ -109,8 +109,8 @@ importers:
   example:
     dependencies:
       '@project-trans/vitepress-theme-project-trans':
-        specifier: workspace:*
-        version: link:..
+        specifier: 0.8.0
+        version: 0.8.0(@iconify-json/carbon@1.2.10)(@iconify-json/icon-park-outline@1.2.2)(@iconify-json/octicon@1.2.7)(@vitejs/plugin-vue-jsx@4.2.0(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(@vueuse/core@12.8.2(typescript@5.8.3))(typescript@5.8.3)(unocss@66.3.3(postcss@8.5.6)(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vitepress-sidebar@1.32.1)(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))
     devDependencies:
       vitepress:
         specifier: ^1.6.3
@@ -1188,6 +1188,20 @@ packages:
     resolution: {integrity: sha512-3wWREQW8rP3qefvt8I+QGMKP3FLQB606iI5v0OYEJOMaPfolUmL7LAoV4gwf+Ke2VSren6TlxsVcqss0f5ncRQ==}
     peerDependencies:
       vue: '3'
+
+  '@project-trans/vitepress-theme-project-trans@0.8.0':
+    resolution: {integrity: sha512-1iHGic51UodbqWmZyb6G/rhY6zNi8aErs7w4O1oRSJoHRtMKfPlPyZRD98bUy8fAoheDqt3KMOQGjXVZoWEzvg==}
+    peerDependencies:
+      '@iconify-json/carbon': ^1.2.7
+      '@iconify-json/icon-park-outline': ^1.2.2
+      '@iconify-json/octicon': ^1.2.4
+      '@vitejs/plugin-vue-jsx': ^4.1.1
+      '@vueuse/core': ^12.7.0
+      unocss: ^66.0.0
+      vite: ^6.1.0
+      vitepress: ^1.6.3
+      vitepress-sidebar: ^1.31.0
+      vue: ^3.5.13
 
   '@quansync/fs@0.1.3':
     resolution: {integrity: sha512-G0OnZbMWEs5LhDyqy2UL17vGhSVHkQIfVojMtEWVenvj0V5S84VBgy86kJIuNsGDp2p7sTKlpSIpBUWdC35OKg==}
@@ -4861,6 +4875,29 @@ snapshots:
   '@project-trans/suggestion-box@0.5.2(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       vue: 3.5.17(typescript@5.8.3)
+
+  '@project-trans/vitepress-theme-project-trans@0.8.0(@iconify-json/carbon@1.2.10)(@iconify-json/icon-park-outline@1.2.2)(@iconify-json/octicon@1.2.7)(@vitejs/plugin-vue-jsx@4.2.0(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(@vueuse/core@12.8.2(typescript@5.8.3))(typescript@5.8.3)(unocss@66.3.3(postcss@8.5.6)(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vitepress-sidebar@1.32.1)(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      '@iconify-json/carbon': 1.2.10
+      '@iconify-json/icon-park-outline': 1.2.2
+      '@iconify-json/octicon': 1.2.7
+      '@nolebase/vitepress-plugin-enhanced-readabilities': 2.18.0(typescript@5.8.3)(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))
+      '@nolebase/vitepress-plugin-git-changelog': 2.18.0(typescript@5.8.3)(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))
+      '@nolebase/vitepress-plugin-highlight-targeted-heading': 2.18.0(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))
+      '@nolebase/vitepress-plugin-meta': 2.18.0(vitepress@1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3))
+      '@project-trans/suggestion-box': 0.5.2(vue@3.5.17(typescript@5.8.3))
+      '@vitejs/plugin-vue-jsx': 4.2.0(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
+      '@vueuse/core': 12.8.2(typescript@5.8.3)
+      markdown-it-footnote: 4.0.0
+      markdown-it-katex: 2.0.3
+      markdown-it-pangu: 1.0.2
+      unocss: 66.3.3(postcss@8.5.6)(vite@6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
+      vite: 6.3.5(@types/node@22.16.4)(jiti@2.4.2)(less@4.3.0)(tsx@4.19.2)(yaml@2.8.0)
+      vitepress: 1.6.3(@algolia/client-search@5.32.0)(@types/node@22.16.4)(less@4.3.0)(postcss@8.5.6)(search-insights@2.17.2)(typescript@5.8.3)
+      vitepress-sidebar: 1.32.1
+      vue: 3.5.17(typescript@5.8.3)
+    transitivePeerDependencies:
+      - typescript
 
   '@quansync/fs@0.1.3':
     dependencies:
