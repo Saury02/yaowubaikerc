@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs",
+    "prebuild": "cd ../ && pnpm run build",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
