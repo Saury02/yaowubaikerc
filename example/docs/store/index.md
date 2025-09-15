@@ -301,7 +301,16 @@ h1, h2, h3, p, ol {
     </div>
     <div class="drug-card" id="ibuprofen">
       <div class="drug-bg-layer">
-        <a href="#ibuprofen" class="drug-link">布洛芬</a>
+        <a href="#ibuprofen" class="drug-link">烟尘</a>
+      </div>
+    </div>
+    <div class="drug-card" id="acetaminophen">
+      <div class="drug-bg-layer">
+        <a href="#acetaminophen" class="drug-link">雪尘</a>
+      </div>
+    </div>
+    <div class="drug-card" id="ambroxol">
+      <div class="dr        <a href="#ibuprofen" class="drug-link">布洛芬</a>
       </div>
     </div>
     <div class="drug-card" id="acetaminophen">
@@ -336,11 +345,7 @@ h1, h2, h3, p, ol {
   <ol>
     <li><strong>发货时间</strong>：三天内发货，偶尔因特殊原因造成延误会进行通知。请各位不要开启自动删除，发货后会把单号私信发送给您。</li>
     <li><strong>快递选择</strong>：我们会使用除了顺丰邮政京东之外的快递。可额外支付邮费顺丰/京东服务。</li>
-    <li><strong>产品保证</strong>：我们保证我们的产品全部为合法非管制物品，不含有任何列管物质！</li>
-    <li><strong>使用范围</strong>：所有试剂仅限工业生产和科研用途！禁止用于食品生产，饲料生产等其他领域。如果您尝试用于人体可能会与其他药物相互作用导致身体危害甚至死亡。</li>
-    <li><strong>注意事项</strong>：务必阅读对应化学物质的注意事项，否则后果自负。</li>
-    <li><strong>付款确认</strong>：每次付款务必与客服确认收款地址，因此问题导致的付款失败一概无法追回。</li>
-    <li><strong>收货要求</strong>：收到货后务必拍下开箱视频发我，并放在灯上拍照给我看含量。本视频用于售后！</li>
+本视频用于售后！</li>
     <li><strong>支付方式</strong>：仅支持USDT（TRC20），不会使用可查看USDT付款教程。</li>
   </ol>
 </div>
